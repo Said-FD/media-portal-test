@@ -1,0 +1,85 @@
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav-link,
+.nav-link:visited {
+  color: var(--text-secondary-color);
+}
+
+.nav-underline {
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+}
+
+.nav-underline .nav-link {
+  padding-block-end: .15rem;
+}
+
+@media (min-width: 992px) {
+  .nav-underline .nav-link {
+    padding-block-end: 1.5rem;
+  }
+}
+
+.nav-underline .nav-link.active {
+  color: var(--text-primary-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.nav-underline .nav-link:not(.active):hover,
+.nav-underline .nav-link:not(.active):focus {
+  color: var(--text-primary-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu,
+.modal-content {
+  background-color: var(--bg-primary-color);
+}
+
+.dropdown-item {
+  color: var(--text-primary-color);
+}
+
+.btn-group .btn {
+  padding-inline: .95rem;
+  font-weight: 700;
+  color: var(--text-primary-color);
+  border-color: var(--border-color);
+}
+
+.btn-group .btn:hover,
+.btn-group .btn:focus {
+  color: var(--text-primary-color);
+}
+
+.btn-group .btn:first-of-type {
+  border-width: 2px 0 2px 2px;
+  border-radius: 8px 0 0 8px;
+}
+
+.btn-group .btn:last-of-type {
+  border-width: 2px 2px 2px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.btn-check:checked + .btn {
+  color: var(--bg-primary-color);
+  background-color: var(--bg-contrast-color);
+  border-color: transparent;
+}
+
+.offcanvas-lg {
+  background-color: var(--bg-primary-color);
+}
+
+.btn-close {
+  color: var(--text-primary-color);
+}

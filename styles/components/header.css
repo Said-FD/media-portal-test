@@ -1,0 +1,28 @@
+input[type=search] {
+  padding: .5rem .5rem .5rem 2.75rem;
+  color: var(--text-primary-color);
+  background-color: var(--bg-secondary-color);
+  border: none;
+}
+
+.icon-search {
+  position: absolute;
+  top: .5rem;
+  left: .75rem;
+}
+
+.user-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.user-controls .btn {
+  padding-inline: 0;
+  color: var(--text-primary-color);
+}
+
+.user-controls .btn:hover,
+.user-controls .btn:focus {
+  color: var(--accent-color);
+}

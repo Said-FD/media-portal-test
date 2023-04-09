@@ -1,0 +1,29 @@
+:root,
+[data-theme=light] {
+  --bg-primary-color: #fff;
+  --bg-contrast-color: #292929;
+  --bg-secondary-color: #eee;
+  --accent-color: #ed7135;
+  --accent-contrast-color: var(--bg-primary-color, #fff);
+  --emphasis-color: #666;
+  --text-primary-color: var(--bg-contrast-color, #292929);
+  --text-secondary-color: var(--emphasis-color, #666);
+  --border-color: #ebebeb;
+  --border-common: 1px solid var(--border-color);
+  --outline-common: 2px solid var(--border-color);
+}
+
+:root,
+[data-theme=dark] {
+  --bg-primary-color: #333;
+  --bg-contrast-color: #f9f9f9;
+  --bg-secondary-color: #555;
+  --accent-color: #ed7135;
+  --accent-contrast-color: var(--bg-primary-color, #333);
+  --emphasis-color: #ddd;
+  --text-primary-color: var(--bg-contrast-color, #f9f9f9);
+  --text-secondary-color: var(--emphasis-color, #ddd);
+  --border-color: #555;
+  --border-common: 1px solid var(--border-color);
+  --outline-common: 2px solid var(--border-color);
+}

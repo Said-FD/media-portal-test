@@ -1,0 +1,58 @@
+h1,
+h2 {
+  margin-block-end: 0;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+input::placeholder {
+  color: var(--emphasis-color);
+}
+
+.page-body {
+  font-family: var(--font-family, var(--bs-body-font-family));
+  color: var(--text-primary-color);
+  background-color: var(--bg-primary-color);
+}
+
+.header {
+  border-bottom: var(--border-common);
+}
+
+.header > .row,
+.main {
+  max-width: 1172px;
+  margin-inline: auto;
+}
+
+.main {
+  margin-block-start: 1rem;
+  margin-block-end: 6rem;
+}
+
+@media (min-width: 992px) {
+  .main {
+    margin-block-start: 2.5rem;
+  }
+}
+
+.generated-cards-group {
+  margin-block-start: .5rem;
+}
+
+.items-number {
+  font-size: .875rem;
+  color: var(--text-secondary-color);
+}
+
+.text-limit {
+  --lines-limit: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines-limit);
+}
