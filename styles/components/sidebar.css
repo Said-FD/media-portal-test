@@ -1,0 +1,25 @@
+@media (min-width: 992px) {
+  .sidebar {
+    width: calc(25% + .75rem);
+    margin-block-start: 1rem;
+    margin-inline-start: -0.75rem;
+  }
+
+  .sidebar nav {
+    top: 1.5rem;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 700;
+  border-radius: var(--border-radius-common);
+}
+
+.sidebar .nav-link:not(.active):hover,
+.sidebar .nav-link:not(.active):focus-visible {
+  color: var(--accent-color);
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--accent-color);
+}

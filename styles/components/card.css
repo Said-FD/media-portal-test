@@ -1,0 +1,31 @@
+article.card {
+  color: var(--text-primary-color);
+  background-color: var(--bg-primary-color);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius-common);
+}
+
+.card-img-top {
+  aspect-ratio: 1 / .56;
+  object-fit: cover;
+}
+
+.card-text {
+  color: var(--text-secondary-color);
+}
+
+.btn-show-more {
+  font-weight: 500;
+  color: var(--text-primary-color);
+}
+
+.btn-show-more:hover,
+.btn-show-more:focus-visible {
+  color: var(--accent-color);
+}
+
+.card-controls {
+  display: flex;
+  gap: 1rem;
+  border-top: var(--border-common);
+}

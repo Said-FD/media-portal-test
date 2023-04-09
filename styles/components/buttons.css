@@ -1,0 +1,21 @@
+.button-primary {
+  padding: .45rem .95rem;
+  font-weight: 700;
+  color: var(--accent-contrast-color);
+  background-color: var(--accent-color);
+  border-radius: var(--border-radius-common);
+}
+
+.button-outline {
+  padding: .45rem .95rem;
+  font-weight: 700;
+  color: var(--text-primary-color);
+  outline: var(--outline-common);
+  outline-offset: var(--outline-offset-common);
+  border-radius: var(--border-radius-common);
+}
+
+.button-outline:hover,
+.button-outline:focus {
+  outline-color: transparent;
+}
