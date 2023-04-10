@@ -4,7 +4,8 @@ export const apiService = async (page = 1, limit = 10) => {
 
   endpoint.search = new URLSearchParams(params);
   const request = await fetch(endpoint);
-  const data = await request.json();
 
-  return data;
+  if (!request.ok) throw new Error('Something went wrong...');
+
+  return await request.json();
 };

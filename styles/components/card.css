@@ -5,9 +5,14 @@ article.card {
   border-radius: var(--border-radius-common);
 }
 
+.card-image-container {
+  background-color: var(--bg-secondary-color);
+}
+
 .card-img-top {
   aspect-ratio: 1 / .56;
   object-fit: cover;
+  min-height: 150px;
 }
 
 .card-text {

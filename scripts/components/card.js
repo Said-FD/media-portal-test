@@ -7,7 +7,7 @@ export const card = (params, index) => {
   const markup = `
     <div id="image-${id}" class="col">
       <article class="card h-100">
-        <div class="overflow-hidden">
+        <div class="card-image-container overflow-hidden">
           <img
             src="${download_url}"
             alt="image by ${author}"
