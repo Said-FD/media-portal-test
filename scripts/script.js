@@ -29,12 +29,17 @@ const lastCardObserver = new IntersectionObserver(entries => {
 }, { rootMargin: '250px' });
 
 async function generateCardsGroup (page, limit) {
-  const response = await apiService(page, limit);
-  response.forEach((data, index) => generateCard(data, index));
+  try {
+    const response = await apiService(page, limit);
+    response.forEach((data, index) => generateCard(data, index));
 
-  const cardsGroup = cardsGroupElement.children;
-  const lastCard = cardsGroup[cardsGroup.length - 1];
-  lastCardObserver.observe(lastCard);
+    const cardsGroup = cardsGroupElement.children;
+    const lastCard = cardsGroup[cardsGroup.length - 1];
+    lastCardObserver.observe(lastCard);
+  } catch (error) {
+    const mainSectionElement = document.querySelector('.main-section');
+    mainSectionElement.textContent = error.message;
+  }
 };
 
 generateCardsGroup(requestPageNumber, REQUEST_PAGE_LIMIT);
